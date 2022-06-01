@@ -1,0 +1,42 @@
+.page {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    min-width: 320px;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.62;
+    color: @color-basic-black;
+    background-image: url('../images/bg-main-mobile.png');
+    background-repeat: no-repeat;
+    background-position: -40% -15%;
+    background-size: 130% auto;
+
+    &__main {
+        flex-grow: 1;
+    }
+}
+
+@media (min-width: 768px) {
+    .page {
+        background-image: url('../images/bg-pattern-1.svg'), url('../images/bg-main-tablet.png');
+        background-position: calc(100% + 32px) -32px,-254px -175px;
+        background-size: auto 400px, 983px auto;
+
+        &__main {
+            margin-top: -152px;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .page {
+        background-image: url('../images/bg-pattern-1.svg'), url('../images/bg-main-desktop.png');
+        background-position: 100% -40px,-200px -150px;
+        background-size: 312px auto, 1613px auto;
+    }
+}

@@ -1,0 +1,55 @@
+.button {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.75;
+    letter-spacing: -.18px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 12px;
+
+    &::before {
+        content: '';
+        display: block;
+        width: 17px;
+        height: 20px;
+        margin-right: 8px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    &--ios {
+        color: @color-basic-white;
+        background-color: @color-basic-black;
+
+        &::before {
+            margin-top: -2px;
+            background-image: url('../images/icon-apple.svg');
+        }
+
+        &:hover,
+        &:focus {
+            background-color: @color-primary-teal;
+        }
+    }
+
+    &--android {
+        color: @color-basic-black;
+        background-color: @color-basic-white;
+
+        &::before {
+            background-image: url('../images/icon-android.svg');
+        }
+
+        &:hover,
+        &:focus {
+            background-color: @color-primary-orange-light;
+        }
+    }
+}
