@@ -12,6 +12,7 @@
         "gulp": "^4.0.2",
         "gulp-autoprefixer": "^8.0.0",
         "gulp-csso": "^4.0.1",
-        "gulp-less": "^5.0.0"
+        "gulp-less": "^5.0.0",
+        "gulp-svg-sprite": "^1.5.0"
     }
 }
